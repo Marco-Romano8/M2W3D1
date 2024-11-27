@@ -85,11 +85,14 @@ function upperFirst(str) {
 //let num4 = parseInt(prompt("Inserisci il numero"))
 
 
-let random = giveMeRandom()
-console.log("Hai pescato: " + random)
+console.log("Hai pescato: " + giveMeRandom(7))
 
 function giveMeRandom(n) {
-    return Math.floor(Math.random(n) * 10)
+    let arrow = []
+    for (let i = 0; i<=n; i++) {
+        arrow.push(Math.floor(Math.random() * 10))
+    }
+    return arrow
 }
 
 
@@ -97,7 +100,7 @@ function giveMeRandom(n) {
 /* ESERCIZIO 1
  Scrivi una funzione chiamata "area" che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.
 */
-
+/*
 let l1 = parseInt(prompt("Inserisci la lunghezza del primo lato:"))
 let l2 = parseInt(prompt("Inserisci la lunghezza del secondo lato:"))
 
